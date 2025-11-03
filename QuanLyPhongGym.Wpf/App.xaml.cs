@@ -14,6 +14,10 @@ namespace QuanLyPhongGym
 
             using var db = new GymDbContext();
 
+            // Debug: Hiển thị đường dẫn database
+            var dbPath = db.Database.GetConnectionString();
+            MessageBox.Show($"Database location:\n{dbPath}", "Debug Info", MessageBoxButton.OK, MessageBoxImage.Information);
+
             // ✅ BẮT BUỘC: tạo DB & bảng nếu chưa có
             db.Database.Migrate();
 
