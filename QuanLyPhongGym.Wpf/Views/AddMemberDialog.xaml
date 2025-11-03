@@ -67,10 +67,10 @@
                 <TextBlock Text="Tên *" Margin="0,10,0,0"/>
                 <TextBox Text="{Binding GivenName, UpdateSourceTrigger=PropertyChanged}"/>
 
-                <!-- CCCD -->
-                <TextBlock Text="Căn cước công dân (CCCD)" Margin="0,10,0,0"/>
+                <!-- CCCD - TẠM THỜI BỎ ĐỂ TEST -->
+                <!--<TextBlock Text="Căn cước công dân (CCCD)" Margin="0,10,0,0"/>
                 <TextBox Text="{Binding CCCD, UpdateSourceTrigger=PropertyChanged}"
-                         MaxLength="12"/>
+                         MaxLength="12"/>-->
 
                 <!-- Số điện thoại -->
                 <TextBlock Text="Số điện thoại" Margin="0,10,0,0"/>

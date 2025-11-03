@@ -103,7 +103,8 @@ namespace QuanLyPhongGym.ViewModels
                     FamilyName = FamilyName.Trim(),
                     MiddleName = string.IsNullOrWhiteSpace(MiddleName) ? null : MiddleName.Trim(),
                     GivenName = GivenName.Trim(),
-                    CCCD = string.IsNullOrWhiteSpace(CCCD) ? null : CCCD.Trim(),
+                    // BỎ CCCD tạm thời để test
+                    // CCCD = string.IsNullOrWhiteSpace(CCCD) ? null : CCCD.Trim(),
                     Phone = string.IsNullOrWhiteSpace(Phone) ? null : Phone.Trim(),
                     BirthDate = BirthDate,
                     MembershipPlanId = SelectedPlan!.Id,
