@@ -124,9 +124,15 @@ namespace QuanLyPhongGym.ViewModels
             }
             catch (Exception ex)
             {
+                var innerMsg = ex.InnerException?.Message ?? "Không có";
+                var innerInnerMsg = ex.InnerException?.InnerException?.Message ?? "Không có";
+
                 MessageBox.Show(
-                    $"Lỗi khi thêm hội viên:\n{ex.Message}",
-                    "Lỗi",
+                    $"Lỗi khi thêm hội viên:\n\n" +
+                    $"Message: {ex.Message}\n\n" +
+                    $"Inner Exception: {innerMsg}\n\n" +
+                    $"Inner Inner: {innerInnerMsg}",
+                    "Lỗi Chi Tiết",
                     MessageBoxButton.OK,
                     MessageBoxImage.Error);
                 DialogResult = false;
