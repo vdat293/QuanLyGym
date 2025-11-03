@@ -43,7 +43,7 @@ namespace QuanLyPhongGym.Services
                     (m.MiddleName ?? "").ToLower().Contains(key));
             }
 
-            return await q.AsNoTracking().ToListAsync();
+            return await q.OrderBy(m => m.Id).AsNoTracking().ToListAsync();
         }
 
         public async Task<List<WorkoutSchedule>> GetTodaySchedulesAsync()
@@ -54,6 +54,8 @@ namespace QuanLyPhongGym.Services
                 .Include(s => s.Member)
                 .Include(s => s.Trainer)
                 .Where(s => s.StartTime >= today && s.StartTime < tomorrow)
+                .OrderBy(s => s.StartTime)
+                .ThenBy(s => s.Id)
                 .AsNoTracking()
                 .ToListAsync();
         }
@@ -74,7 +76,7 @@ namespace QuanLyPhongGym.Services
                 q = q.Where(t => t.FullName.ToLower().Contains(key));
             }
 
-            return await q.AsNoTracking().ToListAsync();
+            return await q.OrderBy(t => t.Id).AsNoTracking().ToListAsync();
         }
         public async Task DeleteAsync(int id)
         {

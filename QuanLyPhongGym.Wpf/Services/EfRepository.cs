@@ -5,10 +5,11 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using QuanLyPhongGym.Data;
+using QuanLyPhongGym.Models;
 
 namespace QuanLyPhongGym.Services
 {
-    public class EfRepository<T> : IRepository<T> where T : class
+    public class EfRepository<T> : IRepository<T> where T : BaseEntity
     {
         private readonly GymDbContext _ctx;
         public EfRepository(GymDbContext ctx) => _ctx = ctx;
@@ -18,6 +19,7 @@ namespace QuanLyPhongGym.Services
             IQueryable<T> q = _ctx.Set<T>();
             foreach (var inc in includes) q = q.Include(inc);
             if (predicate != null) q = q.Where(predicate);
+            q = q.OrderBy(x => x.Id);
             return await q.AsNoTracking().ToListAsync();
         }
 
