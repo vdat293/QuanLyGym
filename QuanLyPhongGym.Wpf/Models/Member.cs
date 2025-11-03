@@ -25,6 +25,9 @@ namespace QuanLyPhongGym.Models
         [MaxLength(20)]
         public string? Phone { get; set; }
 
+        [MaxLength(12)]
+        public string? CCCD { get; set; }  // Căn cước công dân
+
         public DateTime? BirthDate { get; set; }
 
         public int? MembershipPlanId { get; set; }

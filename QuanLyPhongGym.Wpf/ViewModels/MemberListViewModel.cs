@@ -1,5 +1,6 @@
 using QuanLyPhongGym.Models;
 using QuanLyPhongGym.Services;
+using QuanLyPhongGym.Views;
 // using QuanLyPhongGym.Utils;   // ❌ bỏ
 using System;
 using System.Collections.ObjectModel;
@@ -56,28 +57,15 @@ namespace QuanLyPhongGym.ViewModels
 
         private async Task AddAsync()
         {
-            var firstPlan = (await _svc.Plans.GetAllAsync()).FirstOrDefault();
-            if (firstPlan == null)
+            var viewModel = new AddMemberViewModel(_svc);
+            var dialog = new AddMemberDialog(viewModel);
+            var result = dialog.ShowDialog();
+
+            if (result == true)
             {
-                MessageBox.Show("Chưa có gói tập nào!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
+                // Reload the list after successful add
+                await LoadAsync();
             }
-
-            var m = new Member
-            {
-                FamilyName = "Nguyễn",
-                GivenName = "Mới",
-                Phone = "",
-                MembershipPlanId = firstPlan.Id,
-                JoinDate = DateTime.Today,
-                // EndDate read-only → để auto tính theo JoinDate/Plan
-                TotalTrainingDays = 0,
-                PtStatus = PtStatus.KhongCoPT,
-                IsActive = true
-            };
-
-            await _svc.Members.AddAsync(m);
-            await LoadAsync();
         }
 
         private async Task ResetAsync()
