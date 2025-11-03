@@ -58,7 +58,7 @@ namespace QuanLyPhongGym.ViewModels
         private async Task AddAsync()
         {
             var viewModel = new AddMemberViewModel(_svc);
-            var dialog = new AddMemberDialog(viewModel);
+            var dialog = new MemberFormDialog(viewModel);
             var result = dialog.ShowDialog();
 
             if (result == true)

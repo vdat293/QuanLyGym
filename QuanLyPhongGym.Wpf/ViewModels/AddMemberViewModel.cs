@@ -54,7 +54,7 @@ namespace QuanLyPhongGym.ViewModels
 
         public RelayCommand SaveCmd { get; }
 
-        public bool DialogResult { get; private set; }
+        public bool DialogResult { get; set; }
 
         public AddMemberViewModel(GymService svc)
         {
@@ -84,7 +84,7 @@ namespace QuanLyPhongGym.ViewModels
                 && SelectedPlan != null;
         }
 
-        private async Task SaveAsync()
+        public async Task SaveAsync()
         {
             if (!CanSave()) return;
 
