@@ -1,93 +1,93 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\",
+  "WorkspaceRootPath": "D:\\C#\\chiuday\\QuanLyGym\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\viewmodels\\trainerlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\viewmodels\\trainerlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\viewmodels\\schedulelistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\viewmodels\\schedulelistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\viewmodels\\planlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\viewmodels\\planlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\viewmodels\\memberlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\viewmodels\\memberlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\data\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\data\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\data\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\viewmodels\\memberlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\viewmodels\\memberlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\utils\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\utils\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\services\\gymservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\services\\gymservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\views\\memberpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\views\\memberpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\models\\workoutschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\models\\workoutschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\views\\trainerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\views\\trainerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\views\\trainerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\viewmodels\\trainerlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\viewmodels\\trainerlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\viewmodels\\schedulelistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\viewmodels\\schedulelistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\viewmodels\\planlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\viewmodels\\planlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\utils\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\utils\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\services\\gymservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\services\\gymservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\views\\memberpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\views\\memberpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\models\\workoutschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\models\\workoutschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\models\\membershipplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\models\\membershipplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\models\\membershipplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\views\\planpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\views\\planpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\views\\planpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\views\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\views\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\views\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\migrations\\20251103092107_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\migrations\\20251103092107_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\migrations\\20251103092107_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|c:\\users\\pcbd\\downloads\\quanlyphonggym\\quanlyphonggym.wpf\\migrations\\20251103093607_fixtrainerfk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|d:\\c#\\chiuday\\quanlygym\\quanlyphonggym.wpf\\migrations\\20251103093607_fixtrainerfk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|QuanLyPhongGym.Wpf\\QuanLyPhongGym.Wpf.csproj|solutionrelative:quanlyphonggym.wpf\\migrations\\20251103093607_fixtrainerfk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -98,51 +98,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ScheduleListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\ScheduleListViewModel.cs",
-              "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\ViewModels\\ScheduleListViewModel.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\ScheduleListViewModel.cs",
-              "RelativeToolTip": "QuanLyPhongGym.Wpf\\ViewModels\\ScheduleListViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T10:51:54.92Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MemberListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\MemberListViewModel.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\MemberListViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\ViewModels\\MemberListViewModel.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\MemberListViewModel.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\MemberListViewModel.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\ViewModels\\MemberListViewModel.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAmwKEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAwwJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T05:06:02.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "GymDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Data\\GymDbContext.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Data\\GymDbContext.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Data\\GymDbContext.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Data\\GymDbContext.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Data\\GymDbContext.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Data\\GymDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T05:04:22.352Z"
+              "WhenOpened": "2025-11-03T05:04:22.352Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Member.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Models\\Member.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Models\\Member.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Models\\Member.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Models\\Member.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Models\\Member.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Models\\Member.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAkwDwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -150,11 +139,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Trainer.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Models\\Trainer.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Models\\Trainer.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Models\\Trainer.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Models\\Trainer.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Models\\Trainer.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Models\\Trainer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -164,31 +153,31 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "SchedulePage.xaml",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Views\\SchedulePage.xaml",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Views\\SchedulePage.xaml",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Views\\SchedulePage.xaml",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Views\\SchedulePage.xaml",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Views\\SchedulePage.xaml",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Views\\SchedulePage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-03T05:00:47.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MemberPage.xaml",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Views\\MemberPage.xaml",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Views\\MemberPage.xaml",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Views\\MemberPage.xaml",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Views\\MemberPage.xaml",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Views\\MemberPage.xaml",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Views\\MemberPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-03T04:44:17.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "GymService.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Services\\GymService.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Services\\GymService.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Services\\GymService.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Services\\GymService.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Services\\GymService.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Services\\GymService.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAwwFMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -196,11 +185,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Utils\\RelayCommand.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Utils\\RelayCommand.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Utils\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Utils\\RelayCommand.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Utils\\RelayCommand.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Utils\\RelayCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -208,24 +197,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TrainerListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\TrainerListViewModel.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\TrainerListViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\ViewModels\\TrainerListViewModel.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\TrainerListViewModel.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\TrainerListViewModel.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\ViewModels\\TrainerListViewModel.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAQwB0AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAqwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:23:49.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T08:23:49.059Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TrainerPage.xaml",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Views\\TrainerPage.xaml",
+              "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Views\\TrainerPage.xaml",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Views\\TrainerPage.xaml",
+              "RelativeToolTip": "QuanLyPhongGym.Wpf\\Views\\TrainerPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-03T05:00:48.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScheduleListViewModel.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\ScheduleListViewModel.cs",
+              "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\ViewModels\\ScheduleListViewModel.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\ScheduleListViewModel.cs",
+              "RelativeToolTip": "QuanLyPhongGym.Wpf\\ViewModels\\ScheduleListViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T10:51:54.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PlanListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\PlanListViewModel.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\PlanListViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\ViewModels\\PlanListViewModel.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\PlanListViewModel.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\PlanListViewModel.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\ViewModels\\PlanListViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -233,11 +244,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DataSeeder.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Data\\DataSeeder.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Data\\DataSeeder.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Data\\DataSeeder.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Data\\DataSeeder.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Data\\DataSeeder.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Data\\DataSeeder.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwBMAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -245,22 +256,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TrainerPage.xaml",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Views\\TrainerPage.xaml",
-              "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Views\\TrainerPage.xaml",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Views\\TrainerPage.xaml",
-              "RelativeToolTip": "QuanLyPhongGym.Wpf\\Views\\TrainerPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-03T05:00:48.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\App.xaml.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\App.xaml.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\App.xaml.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\App.xaml.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -268,11 +268,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "WorkoutSchedule.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Models\\WorkoutSchedule.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Models\\WorkoutSchedule.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Models\\WorkoutSchedule.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Models\\WorkoutSchedule.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Models\\WorkoutSchedule.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Models\\WorkoutSchedule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -282,9 +282,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "20251103093607_FixTrainerFK.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Migrations\\20251103093607_FixTrainerFK.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Migrations\\20251103093607_FixTrainerFK.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Migrations\\20251103093607_FixTrainerFK.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Migrations\\20251103093607_FixTrainerFK.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Migrations\\20251103093607_FixTrainerFK.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Migrations\\20251103093607_FixTrainerFK.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -294,9 +294,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "20251103092107_Init.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Migrations\\20251103092107_Init.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Migrations\\20251103092107_Init.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Migrations\\20251103092107_Init.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Migrations\\20251103092107_Init.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Migrations\\20251103092107_Init.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Migrations\\20251103092107_Init.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -306,9 +306,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\MainViewModel.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\ViewModels\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\ViewModels\\MainViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -316,11 +316,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\App.xaml",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\App.xaml",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\App.xaml",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\App.xaml",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\App.xaml",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-03T05:00:20.133Z"
@@ -329,9 +329,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\MainWindow.xaml",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\MainWindow.xaml",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\MainWindow.xaml",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-03T05:00:22.792Z"
@@ -340,9 +340,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "PlanPage.xaml",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Views\\PlanPage.xaml",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Views\\PlanPage.xaml",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Views\\PlanPage.xaml",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Views\\PlanPage.xaml",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Views\\PlanPage.xaml",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Views\\PlanPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-03T05:00:45.509Z"
@@ -351,9 +351,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "MembershipPlan.cs",
-              "DocumentMoniker": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Models\\MembershipPlan.cs",
+              "DocumentMoniker": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Models\\MembershipPlan.cs",
               "RelativeDocumentMoniker": "QuanLyPhongGym.Wpf\\Models\\MembershipPlan.cs",
-              "ToolTip": "C:\\Users\\PCBD\\Downloads\\QuanLyPhongGym\\QuanLyPhongGym.Wpf\\Models\\MembershipPlan.cs",
+              "ToolTip": "D:\\C#\\chiuday\\QuanLyGym\\QuanLyPhongGym.Wpf\\Models\\MembershipPlan.cs",
               "RelativeToolTip": "QuanLyPhongGym.Wpf\\Models\\MembershipPlan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

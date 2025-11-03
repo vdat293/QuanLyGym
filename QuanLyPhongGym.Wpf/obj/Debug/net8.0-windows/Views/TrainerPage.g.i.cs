@@ -53,7 +53,7 @@ namespace QuanLyPhongGym.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/QuanLyPhongGym;component/views/trainerpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/QuanLyPhongGym;V1.0.0.0;component/views/trainerpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\TrainerPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
