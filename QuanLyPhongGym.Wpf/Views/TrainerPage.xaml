@@ -1,0 +1,61 @@
+<Page x:Class="QuanLyPhongGym.Views.TrainerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:vm="clr-namespace:QuanLyPhongGym.ViewModels">
+    <Page.DataContext>
+        <vm:MainViewModel/>
+    </Page.DataContext>
+
+    <DockPanel LastChildFill="True" Margin="8">
+
+        <!-- FOOTER -->
+        <Border DockPanel.Dock="Bottom" Height="64" Background="#FFF7F7F7"
+            BorderBrush="#DDD" BorderThickness="1,1,1,0" Padding="8">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Trái: 2 nút -->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Content="Thêm HLV" Padding="14,8" Margin="6,0"
+                  Command="{Binding Trainers.AddCmd}"/>
+                    <Button Content="Xuất file Excel" Padding="14,8" Margin="6,0"
+                  Command="{Binding Trainers.ExportCmd}"/>
+                </StackPanel>
+
+                <!-- Giữa: tìm kiếm ID hoặc Tên + 2 nút -->
+                <StackPanel Grid.Column="1" Orientation="Horizontal"
+                    VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="ID:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+                    <TextBox Width="80" Text="{Binding Trainers.SearchIdText, UpdateSourceTrigger=PropertyChanged}"
+                   Margin="0,0,8,0"/>
+                    <TextBlock Text="hoặc" VerticalAlignment="Center" FontStyle="Italic"
+                     Foreground="Gray" Margin="0,0,8,0"/>
+                    <TextBlock Text="Tên:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+                    <TextBox Width="160" Text="{Binding Trainers.SearchNameText, UpdateSourceTrigger=PropertyChanged}"
+                   Margin="0,0,12,0"/>
+
+                    <Button Content="Tìm kiếm" Padding="14,8" Margin="6,0"
+                  Command="{Binding Trainers.LoadCmd}"/>
+                    <Button Content="Hiển thị tất cả" Padding="14,8" Margin="6,0"
+                  Command="{Binding Trainers.ResetCmd}"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Nội dung: DataGrid -->
+        <DataGrid ItemsSource="{Binding Trainers.Items}"
+              SelectedItem="{Binding Trainers.Selected}"
+              AutoGenerateColumns="False" IsReadOnly="True"
+              ColumnWidth="*">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60"/>
+                <DataGridTextColumn Header="Họ tên" Binding="{Binding FullName}" Width="2*"/>
+                <DataGridTextColumn Header="Điện thoại" Binding="{Binding Phone}" Width="1.2*"/>
+                <DataGridTextColumn Header="Số lượng hội viên" Binding="{Binding TraineeCount}" Width="1.2*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Page>

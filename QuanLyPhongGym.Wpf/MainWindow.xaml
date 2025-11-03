@@ -1,0 +1,26 @@
+<Window x:Class="QuanLyPhongGym.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:QuanLyPhongGym.ViewModels"
+        Title="Quản Lý Phòng Gym" Height="650" Width="980">
+  <Window.DataContext>
+    <vm:MainViewModel/>
+  </Window.DataContext>
+
+  <Grid>
+    <TabControl>
+      <TabItem Header="Hội viên">
+        <Frame Source="Views/MemberPage.xaml"/>
+      </TabItem>
+      <TabItem Header="Gói tập">
+        <Frame Source="Views/PlanPage.xaml"/>
+      </TabItem>
+      <TabItem Header="Huấn luyện viên">
+        <Frame Source="Views/TrainerPage.xaml"/>
+      </TabItem>
+      <TabItem Header="Lịch tập">
+        <Frame Source="Views/SchedulePage.xaml"/>
+      </TabItem>
+    </TabControl>
+  </Grid>
+</Window>
