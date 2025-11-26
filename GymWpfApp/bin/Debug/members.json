@@ -1,0 +1,12 @@
+[
+  {
+    "Id": 1,
+    "Name": "12",
+    "Phone": "aaa",
+    "Gender": "Nam",
+    "Age": 0,
+    "Amount": 123333.0,
+    "Timing": "8AM - 10AM",
+    "DisplayInfo": "1 - 12 | 8AM - 10AM"
+  }
+]
