@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\App.xaml
-1219584333
+5-1322217652
 
-71840093296
+111305684941
 142138049794
-MainWindow.xaml;
+LoginWindow.xaml;MainMenuWindow.xaml;MembersWindow.xaml;StaffWindow.xaml;EquipmentWindow.xaml;
 
-False
+True
 

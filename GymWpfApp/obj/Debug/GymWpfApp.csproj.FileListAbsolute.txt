@@ -1,6 +1,4 @@
 C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\GymWpfApp.csproj.AssemblyReference.cache
-C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\MainWindow.baml
-C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\MainWindow.g.cs
 C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\App.g.cs
 C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\GymWpfApp_MarkupCompile.cache
 C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\GymWpfApp.g.resources
@@ -15,3 +13,15 @@ C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\bin\Debug\Newtonsoft.Json.xml
 C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\GymWpfApp.csproj.Up2Date
 C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\GymWpfApp.exe
 C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\GymWpfApp.pdb
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\LoginWindow.baml
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\MainMenuWindow.baml
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\LoginWindow.g.cs
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\MainMenuWindow.g.cs
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\GymWpfApp_MarkupCompile.lref
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\App.baml
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\MembersWindow.baml
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\StaffWindow.baml
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\EquipmentWindow.baml
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\MembersWindow.g.cs
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\StaffWindow.g.cs
+C:\BDU\Năm 2\C#\GymWpfApp\GymWpfApp\obj\Debug\EquipmentWindow.g.cs
