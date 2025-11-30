@@ -7,7 +7,7 @@ namespace GymWpfApp.Models
         public string Phone { get; set; }
         public string Gender { get; set; }
         public int Age { get; set; }
-        public decimal Amount { get; set; }
+        public string Package { get; set; }
         public string Timing { get; set; }
 
         /// <summary>

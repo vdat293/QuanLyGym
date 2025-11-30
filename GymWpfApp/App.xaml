@@ -211,7 +211,7 @@
 
         <!-- Modern ComboBox Style -->
         <Style x:Key="ModernComboBox" TargetType="ComboBox">
-            <Setter Property="Height" Value="35"/>
+            <Setter Property="Height" Value="38"/>
             <Setter Property="Padding" Value="12,10"/>
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>

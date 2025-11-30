@@ -26,9 +26,9 @@ namespace GymWpfApp
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(txtName.Text) || cbGender.SelectedItem == null)
+                if (string.IsNullOrWhiteSpace(txtName.Text) || cbGender.SelectedItem == null || cbPackage.SelectedItem == null || cbTiming.SelectedItem == null)
                 {
-                    throw new Exception("Vui lòng nhập tên và chọn giới tính!");
+                    throw new Exception("Vui lòng nhập đầy đủ thông tin!");
                 }
 
                 // Validate Name - không được là số
@@ -57,17 +57,7 @@ namespace GymWpfApp
                 }
 
                 // Validate Amount - không được là chữ
-                if (!string.IsNullOrWhiteSpace(txtAmount.Text))
-                {
-                    if (!decimal.TryParse(txtAmount.Text, out decimal amount))
-                    {
-                        throw new Exception("Phí hàng tháng phải là số!");
-                    }
-                    if (amount < 0)
-                    {
-                        throw new Exception("Phí hàng tháng không được âm!");
-                    }
-                }
+                // Removed Amount validation as it is now a ComboBox selection
 
                 if (editingMember != null)
                 {
@@ -76,7 +66,7 @@ namespace GymWpfApp
                     editingMember.Phone = txtPhone.Text.Trim();
                     editingMember.Gender = (cbGender.SelectedItem as ComboBoxItem)?.Content.ToString();
                     editingMember.Age = int.TryParse(txtAge.Text, out int a) ? a : 0;
-                    editingMember.Amount = decimal.TryParse(txtAmount.Text, out decimal m) ? m : 0;
+                    editingMember.Package = (cbPackage.SelectedItem as ComboBoxItem)?.Content.ToString();
                     editingMember.Timing = (cbTiming.SelectedItem as ComboBoxItem)?.Content.ToString();
 
                     DataStore.Save();
@@ -94,7 +84,7 @@ namespace GymWpfApp
                         Phone = txtPhone.Text.Trim(),
                         Gender = (cbGender.SelectedItem as ComboBoxItem)?.Content.ToString(),
                         Age = int.TryParse(txtAge.Text, out int a) ? a : 0,
-                        Amount = decimal.TryParse(txtAmount.Text, out decimal m) ? m : 0,
+                        Package = (cbPackage.SelectedItem as ComboBoxItem)?.Content.ToString(),
                         Timing = (cbTiming.SelectedItem as ComboBoxItem)?.Content.ToString()
                     };
 
@@ -161,7 +151,16 @@ namespace GymWpfApp
                 txtName.Text = selected.Name;
                 txtPhone.Text = selected.Phone;
                 txtAge.Text = selected.Age.ToString();
-                txtAmount.Text = selected.Amount.ToString();
+                
+                // Set ComboBox Package
+                foreach (ComboBoxItem item in cbPackage.Items)
+                {
+                    if (item.Content.ToString() == selected.Package)
+                    {
+                        cbPackage.SelectedItem = item;
+                        break;
+                    }
+                }
 
                 // Set ComboBox Gender
                 foreach (ComboBoxItem item in cbGender.Items)
@@ -194,7 +193,7 @@ namespace GymWpfApp
             txtName.Clear();
             txtPhone.Clear();
             txtAge.Clear();
-            txtAmount.Clear();
+            cbPackage.SelectedIndex = -1;
             cbGender.SelectedIndex = -1;
             cbTiming.SelectedIndex = -1;
             gridMembers.SelectedIndex = -1;

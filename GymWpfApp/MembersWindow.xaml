@@ -72,17 +72,21 @@
                                    Foreground="{StaticResource TextPrimaryColor}" Margin="0,15,0,8"/>
                         <TextBox x:Name="txtAge" Style="{StaticResource ModernTextBox}"/>
 
-                        <TextBlock Text="Phí Hàng Tháng (VNĐ)" FontWeight="SemiBold"
+                        <TextBlock Text="Gói Tập" FontWeight="SemiBold"
                                    Foreground="{StaticResource TextPrimaryColor}" Margin="0,15,0,8"/>
-                        <TextBox x:Name="txtAmount" Style="{StaticResource ModernTextBox}"/>
+                        <ComboBox x:Name="cbPackage" Style="{StaticResource ModernComboBox}">
+                            <ComboBoxItem Content="Cơ bản"/>
+                            <ComboBoxItem Content="Nâng cao"/>
+                            <ComboBoxItem Content="Cao cấp"/>
+                        </ComboBox>
 
-                        <TextBlock Text="Khung Giờ Tập" FontWeight="SemiBold"
+                        <TextBlock Text="Thời Gian" FontWeight="SemiBold"
                                    Foreground="{StaticResource TextPrimaryColor}" Margin="0,15,0,8"/>
                         <ComboBox x:Name="cbTiming" Style="{StaticResource ModernComboBox}">
-                            <ComboBoxItem Content="6AM - 8AM"/>
-                            <ComboBoxItem Content="8AM - 10AM"/>
-                            <ComboBoxItem Content="5PM - 7PM"/>
-                            <ComboBoxItem Content="7PM - 9PM"/>
+                            <ComboBoxItem Content="1 tháng"/>
+                            <ComboBoxItem Content="3 tháng"/>
+                            <ComboBoxItem Content="6 tháng"/>
+                            <ComboBoxItem Content="12 tháng"/>
                         </ComboBox>
 
                         <Button x:Name="btnSave" Content="THÊM MỚI" Style="{StaticResource ModernButton}"
@@ -133,8 +137,8 @@
                                 <DataGridTextColumn Header="SĐT" Binding="{Binding Phone}" Width="120"/>
                                 <DataGridTextColumn Header="Giới Tính" Binding="{Binding Gender}" Width="90"/>
                                 <DataGridTextColumn Header="Tuổi" Binding="{Binding Age}" Width="60"/>
-                                <DataGridTextColumn Header="Phí (VNĐ)" Binding="{Binding Amount}" Width="100"/>
-                                <DataGridTextColumn Header="Giờ Tập" Binding="{Binding Timing}" Width="110"/>
+                                <DataGridTextColumn Header="Gói Tập" Binding="{Binding Package}" Width="100"/>
+                                <DataGridTextColumn Header="Thời Gian" Binding="{Binding Timing}" Width="110"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </Border>

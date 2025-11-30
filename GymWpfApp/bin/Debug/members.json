@@ -1,22 +1,12 @@
 [
   {
     "Id": 1,
-    "Name": "Nguyen Vu Dat",
-    "Phone": "0908453459",
+    "Name": "Nguyễn Vũ Đạt",
+    "Phone": "0123456789",
     "Gender": "Nam",
     "Age": 23,
-    "Amount": 2300000000.0,
-    "Timing": "6AM - 8AM",
-    "DisplayInfo": "1 - Nguyen Vu Dat | 6AM - 8AM"
-  },
-  {
-    "Id": 2,
-    "Name": "Phạm Hoàng Lộc",
-    "Phone": "2220902222222",
-    "Gender": "Nam",
-    "Age": 20,
-    "Amount": 200000000.0,
-    "Timing": "7PM - 9PM",
-    "DisplayInfo": "2 - Phạm Hoàng Lộc | 7PM - 9PM"
+    "Package": "Cao cấp",
+    "Timing": "6 tháng",
+    "DisplayInfo": "1 - Nguyễn Vũ Đạt | 6 tháng"
   }
 ]
