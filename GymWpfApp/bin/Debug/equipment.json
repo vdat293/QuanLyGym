@@ -1,0 +1,182 @@
+[
+  {
+    "Id": 1,
+    "Code": "MCB01",
+    "Name": "Máy chạy bộ Elip",
+    "Category": "Máy chạy bộ",
+    "Location": "Khu Cardio",
+    "Status": "Tốt",
+    "Notes": "Mới nhập"
+  },
+  {
+    "Id": 2,
+    "Code": "MCB02",
+    "Name": "Máy chạy bộ Kingsport",
+    "Category": "Máy chạy bộ",
+    "Location": "Khu Cardio",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 3,
+    "Code": "MCB03",
+    "Name": "Máy chạy bộ Tech",
+    "Category": "Máy chạy bộ",
+    "Location": "Khu Cardio",
+    "Status": "Đang bảo dưỡng",
+    "Notes": "Hư băng tải"
+  },
+  {
+    "Id": 4,
+    "Code": "XD01",
+    "Name": "Xe đạp tập",
+    "Category": "Xe đạp",
+    "Location": "Khu Cardio",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 5,
+    "Code": "XD02",
+    "Name": "Xe đạp tập",
+    "Category": "Xe đạp",
+    "Location": "Khu Cardio",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 6,
+    "Code": "TD01",
+    "Name": "Tạ đơn 5kg",
+    "Category": "Tạ đơn",
+    "Location": "Khu Tạ",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 7,
+    "Code": "TD02",
+    "Name": "Tạ đơn 10kg",
+    "Category": "Tạ đơn",
+    "Location": "Khu Tạ",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 8,
+    "Code": "TD03",
+    "Name": "Tạ đơn 15kg",
+    "Category": "Tạ đơn",
+    "Location": "Khu Tạ",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 9,
+    "Code": "TD04",
+    "Name": "Tạ đơn 20kg",
+    "Category": "Tạ đơn",
+    "Location": "Khu Tạ",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 10,
+    "Code": "GT01",
+    "Name": "Ghế tập ngực ngang",
+    "Category": "Ghế tập",
+    "Location": "Khu Tạ",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 11,
+    "Code": "GT02",
+    "Name": "Ghế tập ngực trên",
+    "Category": "Ghế tập",
+    "Location": "Khu Tạ",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 12,
+    "Code": "MX01",
+    "Name": "Máy xô",
+    "Category": "Máy khối",
+    "Location": "Khu Máy",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 13,
+    "Code": "ME01",
+    "Name": "Máy ép ngực",
+    "Category": "Máy khối",
+    "Location": "Khu Máy",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 14,
+    "Code": "MD01",
+    "Name": "Máy đá đùi",
+    "Category": "Máy khối",
+    "Location": "Khu Máy",
+    "Status": "Hư hại",
+    "Notes": "Chờ linh kiện"
+  },
+  {
+    "Id": 15,
+    "Code": "MG01",
+    "Name": "Máy gập bụng",
+    "Category": "Máy khối",
+    "Location": "Khu Máy",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 16,
+    "Code": "TM01",
+    "Name": "Thảm Yoga",
+    "Category": "Phụ kiện",
+    "Location": "Phòng Yoga",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 17,
+    "Code": "TM02",
+    "Name": "Thảm Yoga",
+    "Category": "Phụ kiện",
+    "Location": "Phòng Yoga",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 18,
+    "Code": "BB01",
+    "Name": "Bóng Yoga",
+    "Category": "Phụ kiện",
+    "Location": "Phòng Yoga",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 19,
+    "Code": "DC01",
+    "Name": "Dây kháng lực",
+    "Category": "Phụ kiện",
+    "Location": "Khu Functional",
+    "Status": "Tốt",
+    "Notes": ""
+  },
+  {
+    "Id": 20,
+    "Code": "XA01",
+    "Name": "Xà đơn",
+    "Category": "Functional",
+    "Location": "Khu Functional",
+    "Status": "Tốt",
+    "Notes": ""
+  }
+]

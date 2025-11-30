@@ -1,0 +1,137 @@
+[
+  {
+    "Id": 1,
+    "Name": "Nguyen Van Quan Ly",
+    "Phone": "0901111111",
+    "Gender": "Nam",
+    "Age": 40,
+    "Position": "Quản Lý",
+    "Shift": "Hành chính"
+  },
+  {
+    "Id": 2,
+    "Name": "Tran Thi Le Tan",
+    "Phone": "0902222222",
+    "Gender": "Nữ",
+    "Age": 22,
+    "Position": "Lễ Tân",
+    "Shift": "Ca 1"
+  },
+  {
+    "Id": 3,
+    "Name": "Le Van HLV 1",
+    "Phone": "0903333333",
+    "Gender": "Nam",
+    "Age": 28,
+    "Position": "Huấn Luyện Viên",
+    "Shift": "Ca 1"
+  },
+  {
+    "Id": 4,
+    "Name": "Pham Thi HLV 2",
+    "Phone": "0904444444",
+    "Gender": "Nữ",
+    "Age": 26,
+    "Position": "Huấn Luyện Viên",
+    "Shift": "Ca 2"
+  },
+  {
+    "Id": 5,
+    "Name": "Hoang Van Bao Ve",
+    "Phone": "0905555555",
+    "Gender": "Nam",
+    "Age": 50,
+    "Position": "Bảo Vệ",
+    "Shift": "Ca 1"
+  },
+  {
+    "Id": 6,
+    "Name": "Do Thi Tap Vu",
+    "Phone": "0906666666",
+    "Gender": "Nữ",
+    "Age": 45,
+    "Position": "Tạp Vụ",
+    "Shift": "Ca 1"
+  },
+  {
+    "Id": 7,
+    "Name": "Vu Van Ky Thuat",
+    "Phone": "0907777777",
+    "Gender": "Nam",
+    "Age": 35,
+    "Position": "Kỹ Thuật",
+    "Shift": "Hành chính"
+  },
+  {
+    "Id": 8,
+    "Name": "Ngo Thi Ke Toan",
+    "Phone": "0908888888",
+    "Gender": "Nữ",
+    "Age": 30,
+    "Position": "Kế Toán",
+    "Shift": "Hành chính"
+  },
+  {
+    "Id": 9,
+    "Name": "Bui Van Sale",
+    "Phone": "0909999999",
+    "Gender": "Nam",
+    "Age": 25,
+    "Position": "Sale",
+    "Shift": "Ca 2"
+  },
+  {
+    "Id": 10,
+    "Name": "Dang Thi Marketing",
+    "Phone": "0910000000",
+    "Gender": "Nữ",
+    "Age": 27,
+    "Position": "Marketing",
+    "Shift": "Hành chính"
+  },
+  {
+    "Id": 11,
+    "Name": "Ly Van HLV 3",
+    "Phone": "0911111111",
+    "Gender": "Nam",
+    "Age": 29,
+    "Position": "Huấn Luyện Viên",
+    "Shift": "Ca 3"
+  },
+  {
+    "Id": 12,
+    "Name": "Truong Thi Le Tan 2",
+    "Phone": "0912222222",
+    "Gender": "Nữ",
+    "Age": 23,
+    "Position": "Lễ Tân",
+    "Shift": "Ca 2"
+  },
+  {
+    "Id": 13,
+    "Name": "Dinh Van Bao Ve 2",
+    "Phone": "0913333333",
+    "Gender": "Nam",
+    "Age": 52,
+    "Position": "Bảo Vệ",
+    "Shift": "Ca 2"
+  },
+  {
+    "Id": 14,
+    "Name": "Lam Thi Tap Vu 2",
+    "Phone": "0914444444",
+    "Gender": "Nữ",
+    "Age": 48,
+    "Position": "Tạp Vụ",
+    "Shift": "Ca 2"
+  },
+  {
+    "Id": 15,
+    "Name": "Mai Van HLV 4",
+    "Phone": "0915555555",
+    "Gender": "Nam",
+    "Age": 31,
+    "Position": "Huấn Luyện Viên",
+    "Shift": "Ca 3"
+  }
+]

@@ -31,16 +31,19 @@ namespace GymWpfApp
                     throw new Exception("Vui lòng nhập đầy đủ thông tin!");
                 }
 
-                // Validate Name - không được là số
-                if (IsNumeric(txtName.Text))
+                // Validate Name - không được chứa số
+                if (txtName.Text.Any(char.IsDigit))
                 {
-                    throw new Exception("Họ tên không được là số!");
+                    throw new Exception("Họ tên không được chứa số!");
                 }
 
-                // Validate Phone - không được là chữ
-                if (!string.IsNullOrWhiteSpace(txtPhone.Text) && !IsNumeric(txtPhone.Text))
+                // Validate Phone - phải là 10 số
+                if (!string.IsNullOrWhiteSpace(txtPhone.Text))
                 {
-                    throw new Exception("Số điện thoại không được chứa chữ!");
+                    if (!IsNumeric(txtPhone.Text) || txtPhone.Text.Length != 10)
+                    {
+                        throw new Exception("Số điện thoại không hợp lệ!");
+                    }
                 }
 
                 // Validate Age - không được là chữ

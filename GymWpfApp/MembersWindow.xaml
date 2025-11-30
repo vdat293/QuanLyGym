@@ -127,7 +127,7 @@
                     </StackPanel>
 
                     <!-- Data Grid -->
-                    <Border Grid.Row="1" BorderBrush="{StaticResource BorderColor}" BorderThickness="1"
+                    <Border Grid.Row="1" BorderBrush="#FF9E9E9E" BorderThickness="1"
                             CornerRadius="8" Background="{StaticResource SurfaceColor}">
                         <DataGrid x:Name="gridMembers" Style="{StaticResource ModernDataGrid}"
                                   SelectionChanged="GridMembers_SelectionChanged">
