@@ -130,8 +130,16 @@ namespace GymWpfApp
         private void BtnSearch_Click(object sender, RoutedEventArgs e)
         {
             string keyword = txtSearch.Text.ToLower();
-            var filtered = DataStore.Members.Where(m => m.Name.ToLower().Contains(keyword)).ToList();
-            gridMembers.ItemsSource = filtered;
+            if (int.TryParse(keyword, out int id))
+            {
+                var filtered = DataStore.Members.Where(m => m.Id == id).ToList();
+                gridMembers.ItemsSource = filtered;
+            }
+            else
+            {
+                var filtered = DataStore.Members.Where(m => m.Name.ToLower().Contains(keyword)).ToList();
+                gridMembers.ItemsSource = filtered;
+            }
         }
 
         private void BtnRefresh_Click(object sender, RoutedEventArgs e)

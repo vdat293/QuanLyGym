@@ -1,137 +1,146 @@
 [
   {
     "Id": 1,
-    "Name": "Nguyen Van Quan Ly",
+    "Name": "Nguyễn Văn Quốc",
     "Phone": "0901111111",
     "Gender": "Nam",
     "Age": 40,
     "Position": "Quản Lý",
-    "Shift": "Hành chính"
+    "Shift": "Ca 2: 14h - 22h"
   },
   {
     "Id": 2,
-    "Name": "Tran Thi Le Tan",
+    "Name": "Trần Thị Thu Trang",
     "Phone": "0902222222",
     "Gender": "Nữ",
     "Age": 22,
     "Position": "Lễ Tân",
-    "Shift": "Ca 1"
+    "Shift": "Ca 1: 6h - 14h"
   },
   {
     "Id": 3,
-    "Name": "Le Van HLV 1",
+    "Name": "Lê Văn Hùng",
     "Phone": "0903333333",
     "Gender": "Nam",
     "Age": 28,
     "Position": "Huấn Luyện Viên",
-    "Shift": "Ca 1"
+    "Shift": "Ca 1: 6h - 14h"
   },
   {
     "Id": 4,
-    "Name": "Pham Thi HLV 2",
+    "Name": "Phạm Thị Lan Anh",
     "Phone": "0904444444",
     "Gender": "Nữ",
     "Age": 26,
     "Position": "Huấn Luyện Viên",
-    "Shift": "Ca 2"
+    "Shift": "Ca 1: 6h - 14h"
   },
   {
     "Id": 5,
-    "Name": "Hoang Van Bao Ve",
+    "Name": "Hoàng Văn Bảy",
     "Phone": "0905555555",
     "Gender": "Nam",
     "Age": 50,
     "Position": "Bảo Vệ",
-    "Shift": "Ca 1"
+    "Shift": "Ca 1: 6h - 14h"
   },
   {
     "Id": 6,
-    "Name": "Do Thi Tap Vu",
+    "Name": "Đỗ Thị Hồng Hạnh",
     "Phone": "0906666666",
     "Gender": "Nữ",
     "Age": 45,
-    "Position": "Tạp Vụ",
-    "Shift": "Ca 1"
+    "Position": "Lễ Tân",
+    "Shift": "Ca 1: 6h - 14h"
   },
   {
     "Id": 7,
-    "Name": "Vu Van Ky Thuat",
+    "Name": "Vũ Văn Kiên",
     "Phone": "0907777777",
     "Gender": "Nam",
     "Age": 35,
-    "Position": "Kỹ Thuật",
-    "Shift": "Hành chính"
+    "Position": "Huấn Luyện Viên",
+    "Shift": "Ca 2: 14h - 22h"
   },
   {
     "Id": 8,
-    "Name": "Ngo Thi Ke Toan",
+    "Name": "Ngô Thị Thanh Trúc",
     "Phone": "0908888888",
     "Gender": "Nữ",
     "Age": 30,
-    "Position": "Kế Toán",
-    "Shift": "Hành chính"
+    "Position": "Bảo Vệ",
+    "Shift": "Ca 2: 14h - 22h"
   },
   {
     "Id": 9,
-    "Name": "Bui Van Sale",
+    "Name": "Bùi Văn Hải",
     "Phone": "0909999999",
     "Gender": "Nam",
     "Age": 25,
-    "Position": "Sale",
-    "Shift": "Ca 2"
+    "Position": "Nhân Viên Vệ Sinh",
+    "Shift": "Ca 2: 14h - 22h"
   },
   {
     "Id": 10,
-    "Name": "Dang Thi Marketing",
+    "Name": "Đặng Thị Tuyết",
     "Phone": "0910000000",
     "Gender": "Nữ",
     "Age": 27,
-    "Position": "Marketing",
-    "Shift": "Hành chính"
+    "Position": "Nhân Viên Vệ Sinh",
+    "Shift": "Ca 1: 6h - 14h"
   },
   {
     "Id": 11,
-    "Name": "Ly Van HLV 3",
+    "Name": "Lý Thái Sơn",
     "Phone": "0911111111",
     "Gender": "Nam",
     "Age": 29,
     "Position": "Huấn Luyện Viên",
-    "Shift": "Ca 3"
+    "Shift": "Ca 3: 10h - 18h"
   },
   {
     "Id": 12,
-    "Name": "Truong Thi Le Tan 2",
+    "Name": "Trương Ngọc Mai",
     "Phone": "0912222222",
     "Gender": "Nữ",
     "Age": 23,
     "Position": "Lễ Tân",
-    "Shift": "Ca 2"
+    "Shift": "Ca 2: 14h - 22h"
   },
   {
     "Id": 13,
-    "Name": "Dinh Van Bao Ve 2",
+    "Name": "Đinh Văn Thành",
     "Phone": "0913333333",
     "Gender": "Nam",
     "Age": 52,
     "Position": "Bảo Vệ",
-    "Shift": "Ca 2"
+    "Shift": "Ca 2: 14h - 22h"
   },
   {
     "Id": 14,
-    "Name": "Lam Thi Tap Vu 2",
+    "Name": "Lâm Thị Thu Cúc",
     "Phone": "0914444444",
     "Gender": "Nữ",
     "Age": 48,
-    "Position": "Tạp Vụ",
-    "Shift": "Ca 2"
+    "Position": "Nhân Viên Vệ Sinh",
+    "Shift": "Ca 2: 14h - 22h"
   },
   {
     "Id": 15,
-    "Name": "Mai Van HLV 4",
+    "Name": "Mai Văn Đạt",
     "Phone": "0915555555",
     "Gender": "Nam",
     "Age": 31,
     "Position": "Huấn Luyện Viên",
-    "Shift": "Ca 3"
+    "Shift": "Ca 3: 10h - 18h"
+  },
+  {
+    "Id": 16,
+    "Name": "Nguyễn Tuấn Vũ",
+    "Phone": "0123456789",
+    "Gender": "Nam",
+    "Age": 23,
+    "Position": "Huấn Luyện Viên",
+    "Shift": "Ca 2: 14h - 22h"
   }
 ]

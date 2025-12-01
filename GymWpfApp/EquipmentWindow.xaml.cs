@@ -107,10 +107,18 @@ namespace GymWpfApp
         private void BtnSearch_Click(object sender, RoutedEventArgs e)
         {
             string keyword = txtSearch.Text.ToLower();
-            var filtered = EquipmentDataStore.EquipmentList.Where(eq =>
-                eq.Name.ToLower().Contains(keyword) ||
-                eq.Code.ToLower().Contains(keyword)).ToList();
-            gridEquipment.ItemsSource = filtered;
+            if (int.TryParse(keyword, out int id))
+            {
+                var filtered = EquipmentDataStore.EquipmentList.Where(eq => eq.Id == id).ToList();
+                gridEquipment.ItemsSource = filtered;
+            }
+            else
+            {
+                var filtered = EquipmentDataStore.EquipmentList.Where(eq =>
+                    eq.Name.ToLower().Contains(keyword) ||
+                    eq.Code.ToLower().Contains(keyword)).ToList();
+                gridEquipment.ItemsSource = filtered;
+            }
         }
 
         private void BtnRefresh_Click(object sender, RoutedEventArgs e)

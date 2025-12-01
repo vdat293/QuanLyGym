@@ -31,14 +31,17 @@ namespace GymWpfApp
                     throw new Exception("Vui lòng nhập tên và chọn giới tính!");
                 }
 
-                if (IsNumeric(txtName.Text))
+                if (txtName.Text.Any(char.IsDigit))
                 {
-                    throw new Exception("Họ tên không được là số!");
+                    throw new Exception("Tên không được chứa số!");
                 }
 
-                if (!string.IsNullOrWhiteSpace(txtPhone.Text) && !IsNumeric(txtPhone.Text))
+                if (!string.IsNullOrWhiteSpace(txtPhone.Text))
                 {
-                    throw new Exception("Số điện thoại không được chứa chữ!");
+                    if (!IsNumeric(txtPhone.Text) || txtPhone.Text.Length != 10)
+                    {
+                        throw new Exception("Số điện thoại không hợp lệ!");
+                    }
                 }
 
                 if (!string.IsNullOrWhiteSpace(txtAge.Text))
@@ -121,8 +124,16 @@ namespace GymWpfApp
         private void BtnSearch_Click(object sender, RoutedEventArgs e)
         {
             string keyword = txtSearch.Text.ToLower();
-            var filtered = StaffDataStore.StaffList.Where(s => s.Name.ToLower().Contains(keyword)).ToList();
-            gridStaff.ItemsSource = filtered;
+            if (int.TryParse(keyword, out int id))
+            {
+                var filtered = StaffDataStore.StaffList.Where(s => s.Id == id).ToList();
+                gridStaff.ItemsSource = filtered;
+            }
+            else
+            {
+                var filtered = StaffDataStore.StaffList.Where(s => s.Name.ToLower().Contains(keyword)).ToList();
+                gridStaff.ItemsSource = filtered;
+            }
         }
 
         private void BtnRefresh_Click(object sender, RoutedEventArgs e)

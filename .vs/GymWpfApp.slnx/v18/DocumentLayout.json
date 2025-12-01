@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\gymwpfapp\\staffwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|solutionrelative:gymwpfapp\\staffwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|c:\\bdu\\n\u0103m 2\\c#\\gymwpfapp\\gymwpfapp\\staffwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|solutionrelative:gymwpfapp\\staffwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|c:\\bdu\\n\u0103m 2\\c#\\gymwpfapp\\gymwpfapp\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|solutionrelative:gymwpfapp\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|solutionrelative:gymwpfapp\\equipmentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\gymwpfapp\\staffwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|solutionrelative:gymwpfapp\\staffwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\gymwpfapp\\memberswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5963BE52-09FB-4E97-A0EF-A0857EFACE52}|GymWpfApp\\GymWpfApp.csproj|solutionrelative:gymwpfapp\\memberswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,11 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "StaffWindow.xaml.cs",
+              "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\StaffWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GymWpfApp\\StaffWindow.xaml.cs",
+              "ToolTip": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\StaffWindow.xaml.cs",
+              "RelativeToolTip": "GymWpfApp\\StaffWindow.xaml.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T10:25:14.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MainMenuWindow.xaml",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\MainMenuWindow.xaml",
               "RelativeDocumentMoniker": "GymWpfApp\\MainMenuWindow.xaml",
@@ -65,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "EquipmentWindow.xaml",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\EquipmentWindow.xaml",
               "RelativeDocumentMoniker": "GymWpfApp\\EquipmentWindow.xaml",
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "GymWpfApp\\LoginWindow.xaml",
@@ -87,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "GymWpfApp\\App.xaml.cs",
@@ -99,42 +116,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "GymWpfApp\\LoginWindow.xaml.cs",
               "ToolTip": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\LoginWindow.xaml.cs",
               "RelativeToolTip": "GymWpfApp\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T09:39:42.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "StaffWindow.xaml",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\StaffWindow.xaml",
               "RelativeDocumentMoniker": "GymWpfApp\\StaffWindow.xaml",
               "ToolTip": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\StaffWindow.xaml",
               "RelativeToolTip": "GymWpfApp\\StaffWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-30T06:49:33.584Z"
+              "WhenOpened": "2025-11-30T06:49:33.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\App.xaml",
               "RelativeDocumentMoniker": "GymWpfApp\\App.xaml",
               "ToolTip": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\App.xaml",
               "RelativeToolTip": "GymWpfApp\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-30T06:30:02.659Z"
+              "WhenOpened": "2025-11-30T06:30:02.659Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MembersWindow.xaml.cs",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\MembersWindow.xaml.cs",
               "RelativeDocumentMoniker": "GymWpfApp\\MembersWindow.xaml.cs",
@@ -146,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MembersWindow.xaml",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\MembersWindow.xaml",
               "RelativeDocumentMoniker": "GymWpfApp\\MembersWindow.xaml",
@@ -157,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\BDU\\N\u0103m 2\\C#\\GymWpfApp\\GymWpfApp\\packages.config",
               "RelativeDocumentMoniker": "GymWpfApp\\packages.config",
