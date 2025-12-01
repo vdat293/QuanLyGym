@@ -6,7 +6,8 @@
     "Gender": "Nam",
     "Age": 25,
     "Package": "Cơ bản",
-    "Timing": "1 tháng"
+    "Timing": "1 tháng",
+    "DisplayInfo": "1 - Nguyen Van A | 1 tháng"
   },
   {
     "Id": 2,
@@ -15,7 +16,8 @@
     "Gender": "Nữ",
     "Age": 22,
     "Package": "Nâng cao",
-    "Timing": "3 tháng"
+    "Timing": "3 tháng",
+    "DisplayInfo": "2 - Tran Thi B | 3 tháng"
   },
   {
     "Id": 3,
@@ -24,7 +26,8 @@
     "Gender": "Nam",
     "Age": 30,
     "Package": "Cao cấp",
-    "Timing": "12 tháng"
+    "Timing": "12 tháng",
+    "DisplayInfo": "3 - Le Van C | 12 tháng"
   },
   {
     "Id": 4,
@@ -33,7 +36,8 @@
     "Gender": "Nữ",
     "Age": 28,
     "Package": "Cơ bản",
-    "Timing": "6 tháng"
+    "Timing": "6 tháng",
+    "DisplayInfo": "4 - Pham Thi D | 6 tháng"
   },
   {
     "Id": 5,
@@ -42,7 +46,8 @@
     "Gender": "Nam",
     "Age": 35,
     "Package": "Nâng cao",
-    "Timing": "1 tháng"
+    "Timing": "1 tháng",
+    "DisplayInfo": "5 - Hoang Van E | 1 tháng"
   },
   {
     "Id": 6,
@@ -51,7 +56,8 @@
     "Gender": "Nữ",
     "Age": 24,
     "Package": "Cao cấp",
-    "Timing": "3 tháng"
+    "Timing": "3 tháng",
+    "DisplayInfo": "6 - Do Thi F | 3 tháng"
   },
   {
     "Id": 7,
@@ -60,7 +66,8 @@
     "Gender": "Nam",
     "Age": 27,
     "Package": "Cơ bản",
-    "Timing": "12 tháng"
+    "Timing": "12 tháng",
+    "DisplayInfo": "7 - Vu Van G | 12 tháng"
   },
   {
     "Id": 8,
@@ -69,7 +76,8 @@
     "Gender": "Nữ",
     "Age": 26,
     "Package": "Nâng cao",
-    "Timing": "6 tháng"
+    "Timing": "6 tháng",
+    "DisplayInfo": "8 - Ngo Thi H | 6 tháng"
   },
   {
     "Id": 9,
@@ -78,7 +86,8 @@
     "Gender": "Nam",
     "Age": 32,
     "Package": "Cao cấp",
-    "Timing": "1 tháng"
+    "Timing": "1 tháng",
+    "DisplayInfo": "9 - Bui Van I | 1 tháng"
   },
   {
     "Id": 10,
@@ -87,7 +96,8 @@
     "Gender": "Nữ",
     "Age": 29,
     "Package": "Cơ bản",
-    "Timing": "3 tháng"
+    "Timing": "3 tháng",
+    "DisplayInfo": "10 - Dang Thi K | 3 tháng"
   },
   {
     "Id": 11,
@@ -96,7 +106,8 @@
     "Gender": "Nam",
     "Age": 31,
     "Package": "Nâng cao",
-    "Timing": "12 tháng"
+    "Timing": "12 tháng",
+    "DisplayInfo": "11 - Ly Van L | 12 tháng"
   },
   {
     "Id": 12,
@@ -105,7 +116,8 @@
     "Gender": "Nữ",
     "Age": 23,
     "Package": "Cao cấp",
-    "Timing": "6 tháng"
+    "Timing": "6 tháng",
+    "DisplayInfo": "12 - Truong Thi M | 6 tháng"
   },
   {
     "Id": 13,
@@ -114,7 +126,8 @@
     "Gender": "Nam",
     "Age": 34,
     "Package": "Cơ bản",
-    "Timing": "1 tháng"
+    "Timing": "1 tháng",
+    "DisplayInfo": "13 - Dinh Van N | 1 tháng"
   },
   {
     "Id": 14,
@@ -123,7 +136,8 @@
     "Gender": "Nữ",
     "Age": 21,
     "Package": "Nâng cao",
-    "Timing": "3 tháng"
+    "Timing": "3 tháng",
+    "DisplayInfo": "14 - Lam Thi O | 3 tháng"
   },
   {
     "Id": 15,
@@ -132,6 +146,17 @@
     "Gender": "Nam",
     "Age": 33,
     "Package": "Cao cấp",
-    "Timing": "12 tháng"
+    "Timing": "12 tháng",
+    "DisplayInfo": "15 - Mai Van P | 12 tháng"
+  },
+  {
+    "Id": 16,
+    "Name": "Nguyễn Vũ Đạt",
+    "Phone": "0123456789",
+    "Gender": "Nam",
+    "Age": 23,
+    "Package": "Cơ bản",
+    "Timing": "3 tháng",
+    "DisplayInfo": "16 - Nguyễn Vũ Đạt | 3 tháng"
   }
 ]
