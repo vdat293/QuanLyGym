@@ -71,7 +71,8 @@
                                   VerticalAlignment="Center" FontSize="13"/>
                         <TextBlock Text="Quên mật khẩu?" HorizontalAlignment="Right"
                                    Foreground="{StaticResource PrimaryColor}" FontSize="13"
-                                   Cursor="Hand" FontWeight="SemiBold">
+                                   Cursor="Hand" FontWeight="SemiBold"
+                                   MouseLeftButtonDown="BtnForgotPassword_Click">
                             <TextBlock.Style>
                                 <Style TargetType="TextBlock">
                                     <Style.Triggers>
@@ -83,7 +84,6 @@
                             </TextBlock.Style>
                         </TextBlock>
                     </Grid>
-
                     <!-- Login Button -->
                     <Button x:Name="btnLogin" Content="ĐĂNG NHẬP"
                             Style="{StaticResource ModernButton}"

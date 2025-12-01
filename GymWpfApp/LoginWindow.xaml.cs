@@ -19,6 +19,11 @@ namespace GymWpfApp
             Application.Current.Shutdown();
         }
 
+        private void BtnForgotPassword_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Liên hệ email 24050129@student.bdu.edu.vn để lấy lại mật khẩu", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
             try
