@@ -1,3 +1,8 @@
+using GymWpfApp.Constants;
+using GymWpfApp.Infrastructure;
+using GymWpfApp.Interfaces;
+using GymWpfApp.Models;
+using GymWpfApp.Validators;
 using System;
 using System.Linq;
 using System.Windows;
@@ -8,13 +13,15 @@ namespace GymWpfApp
     public partial class EquipmentWindow : Window
     {
         private Equipment editingEquipment = null;
+        private readonly IDataService<Equipment> _equipmentService;
 
         public EquipmentWindow()
         {
             InitializeComponent();
 
-            EquipmentDataStore.Load();
-            gridEquipment.ItemsSource = EquipmentDataStore.EquipmentList;
+            // Dependency Injection - Resolve service from container
+            _equipmentService = ServiceContainer.Instance.Resolve<IDataService<Equipment>>();
+            gridEquipment.ItemsSource = _equipmentService.GetAll();
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
@@ -26,52 +33,66 @@ namespace GymWpfApp
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(txtCode.Text) || string.IsNullOrWhiteSpace(txtName.Text))
+                // Get values
+                string code = txtCode.Text.Trim().ToUpper();
+                string name = txtName.Text.Trim();
+                string category = (cbCategory.SelectedItem as ComboBoxItem)?.Content.ToString() ?? "Khác";
+
+                // Validate using EquipmentValidator
+                var validationResult = EquipmentValidator.ValidateEquipment(code, name, category);
+                if (!validationResult.IsValid)
                 {
-                    throw new Exception("Vui lòng nhập mã và tên thiết bị!");
+                    throw new Exception(validationResult.GetErrorMessage());
                 }
 
                 if (editingEquipment != null)
                 {
                     // UPDATE
-                    editingEquipment.Code = txtCode.Text.Trim().ToUpper();
-                    editingEquipment.Name = txtName.Text.Trim();
-                    editingEquipment.Category = (cbCategory.SelectedItem as ComboBoxItem)?.Content.ToString() ?? "Khác";
+                    editingEquipment.Code = code;
+                    editingEquipment.Name = name;
+                    editingEquipment.Category = category;
                     editingEquipment.Location = (cbLocation.SelectedItem as ComboBoxItem)?.Content.ToString();
                     editingEquipment.Status = (cbStatus.SelectedItem as ComboBoxItem)?.Content.ToString() ?? "Tốt";
                     editingEquipment.Notes = txtNotes.Text.Trim();
 
-                    EquipmentDataStore.Save();
+                    _equipmentService.Update(editingEquipment);
                     Logger.Write($"Cập nhật thiết bị: {editingEquipment.Code} - {editingEquipment.Name}");
 
-                    MessageBox.Show("Cập nhật thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(
+                        AppConstants.Messages.SuccessUpdated,
+                        AppConstants.Messages.SuccessTitle,
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
                 }
                 else
                 {
                     // Kiểm tra mã trùng
-                    string newCode = txtCode.Text.Trim().ToUpper();
-                    if (EquipmentDataStore.EquipmentList.Any(eq => eq.Code == newCode))
+                    if (_equipmentService.GetAll().Any(eq => eq.Code == code))
                     {
-                        throw new Exception($"Mã thiết bị '{newCode}' đã tồn tại!");
+                        throw new Exception($"Mã thiết bị '{code}' đã tồn tại!");
                     }
 
                     // ADD NEW
                     var equipment = new Equipment
                     {
-                        Id = EquipmentDataStore.NextId(),
-                        Code = newCode,
-                        Name = txtName.Text.Trim(),
-                        Category = (cbCategory.SelectedItem as ComboBoxItem)?.Content.ToString() ?? "Khác",
+                        Code = code,
+                        Name = name,
+                        Category = category,
                         Location = (cbLocation.SelectedItem as ComboBoxItem)?.Content.ToString(),
                         Status = (cbStatus.SelectedItem as ComboBoxItem)?.Content.ToString() ?? "Tốt",
                         Notes = txtNotes.Text.Trim()
                     };
 
-                    EquipmentDataStore.EquipmentList.Add(equipment);
-                    EquipmentDataStore.Save();
+                    _equipmentService.Add(equipment);
                     Logger.Write($"Thêm thiết bị: {equipment.Code} - {equipment.Name}");
 
-                    MessageBox.Show("Thêm thiết bị thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(
+                        AppConstants.Messages.SuccessAdded,
+                        AppConstants.Messages.SuccessTitle,
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
                 }
 
                 ClearInput();
@@ -79,7 +100,12 @@ namespace GymWpfApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(
+                    ex.Message,
+                    AppConstants.Messages.ErrorTitle,
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
                 Logger.Write($"Lỗi xử lý thiết bị: {ex.Message}");
             }
         }
@@ -88,43 +114,52 @@ namespace GymWpfApp
         {
             if (gridEquipment.SelectedItem is Equipment selectedEquipment)
             {
-                var result = MessageBox.Show($"Bạn có chắc muốn xóa thiết bị {selectedEquipment.Code} - {selectedEquipment.Name}?",
-                    "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                var result = MessageBox.Show(
+                    $"Bạn có chắc muốn xóa thiết bị {selectedEquipment.Code} - {selectedEquipment.Name}?",
+                    AppConstants.Messages.ConfirmTitle,
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Warning
+                );
+
                 if (result == MessageBoxResult.Yes)
                 {
-                    EquipmentDataStore.EquipmentList.Remove(selectedEquipment);
-                    EquipmentDataStore.Save();
+                    _equipmentService.Remove(selectedEquipment);
                     Logger.Write($"Đã xóa thiết bị: {selectedEquipment.Code} - {selectedEquipment.Name}");
                     ClearInput();
+
+                    MessageBox.Show(
+                        AppConstants.Messages.SuccessDeleted,
+                        AppConstants.Messages.SuccessTitle,
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn dòng cần xóa!");
+                MessageBox.Show(
+                    AppConstants.Messages.InfoNoSelection,
+                    AppConstants.Messages.InfoTitle,
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information
+                );
             }
         }
 
         private void BtnSearch_Click(object sender, RoutedEventArgs e)
         {
             string keyword = txtSearch.Text.ToLower();
-            if (int.TryParse(keyword, out int id))
-            {
-                var filtered = EquipmentDataStore.EquipmentList.Where(eq => eq.Id == id).ToList();
-                gridEquipment.ItemsSource = filtered;
-            }
-            else
-            {
-                var filtered = EquipmentDataStore.EquipmentList.Where(eq =>
-                    eq.Name.ToLower().Contains(keyword) ||
-                    eq.Code.ToLower().Contains(keyword)).ToList();
-                gridEquipment.ItemsSource = filtered;
-            }
+            var filtered = _equipmentService.GetAll().Where(eq =>
+                eq.Code.ToLower().Contains(keyword) ||
+                eq.Name.ToLower().Contains(keyword)
+            ).ToList();
+            gridEquipment.ItemsSource = filtered;
         }
 
         private void BtnRefresh_Click(object sender, RoutedEventArgs e)
         {
             txtSearch.Text = "";
-            gridEquipment.ItemsSource = EquipmentDataStore.EquipmentList;
+            gridEquipment.ItemsSource = _equipmentService.GetAll();
         }
 
         private void BtnClear_Click(object sender, RoutedEventArgs e)
@@ -139,10 +174,10 @@ namespace GymWpfApp
                 editingEquipment = selected;
 
                 txtCode.Text = selected.Code;
-                txtCode.IsEnabled = false; // Không cho sửa mã khi update
                 txtName.Text = selected.Name;
                 txtNotes.Text = selected.Notes;
 
+                // Set ComboBox Category
                 foreach (ComboBoxItem item in cbCategory.Items)
                 {
                     if (item.Content.ToString() == selected.Category)
@@ -152,6 +187,7 @@ namespace GymWpfApp
                     }
                 }
 
+                // Set ComboBox Location
                 foreach (ComboBoxItem item in cbLocation.Items)
                 {
                     if (item.Content.ToString() == selected.Location)
@@ -161,6 +197,7 @@ namespace GymWpfApp
                     }
                 }
 
+                // Set ComboBox Status
                 foreach (ComboBoxItem item in cbStatus.Items)
                 {
                     if (item.Content.ToString() == selected.Status)
@@ -179,12 +216,11 @@ namespace GymWpfApp
         {
             editingEquipment = null;
             txtCode.Clear();
-            txtCode.IsEnabled = true; // Cho phép nhập mã khi thêm mới
             txtName.Clear();
             txtNotes.Clear();
             cbCategory.SelectedIndex = -1;
             cbLocation.SelectedIndex = -1;
-            cbStatus.SelectedIndex = 0; // Mặc định "Tốt"
+            cbStatus.SelectedIndex = -1;
             gridEquipment.SelectedIndex = -1;
 
             lblFormTitle.Text = "THÊM MỚI";

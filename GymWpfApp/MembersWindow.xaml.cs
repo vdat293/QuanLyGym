@@ -1,3 +1,8 @@
+using GymWpfApp.Constants;
+using GymWpfApp.Infrastructure;
+using GymWpfApp.Interfaces;
+using GymWpfApp.Models;
+using GymWpfApp.Validators;
 using System;
 using System.Linq;
 using System.Windows;
@@ -8,13 +13,15 @@ namespace GymWpfApp
     public partial class MembersWindow : Window
     {
         private Member editingMember = null;
+        private readonly IDataService<Member> _memberService;
 
         public MembersWindow()
         {
             InitializeComponent();
 
-            DataStore.Load();
-            gridMembers.ItemsSource = DataStore.Members;
+            // Dependency Injection - Resolve service from container
+            _memberService = ServiceContainer.Instance.Resolve<IDataService<Member>>();
+            gridMembers.ItemsSource = _memberService.GetAll();
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
@@ -26,76 +33,69 @@ namespace GymWpfApp
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(txtName.Text) || cbGender.SelectedItem == null || cbPackage.SelectedItem == null || cbTiming.SelectedItem == null)
+                // Validate required fields
+                if (string.IsNullOrWhiteSpace(txtName.Text) ||
+                    cbGender.SelectedItem == null ||
+                    cbPackage.SelectedItem == null ||
+                    cbTiming.SelectedItem == null)
                 {
-                    throw new Exception("Vui lòng nhập đầy đủ thông tin!");
+                    throw new Exception(AppConstants.Messages.ErrorMissingInfo);
                 }
 
-                // Validate Name - không được chứa số
-                if (txtName.Text.Any(char.IsDigit))
-                {
-                    throw new Exception("Họ tên không được chứa số!");
-                }
+                // Get values
+                string name = txtName.Text.Trim();
+                string phone = txtPhone.Text.Trim();
+                int age = int.TryParse(txtAge.Text, out int a) ? a : 0;
 
-                // Validate Phone - phải là 10 số
-                if (!string.IsNullOrWhiteSpace(txtPhone.Text))
+                // Validate using PersonValidator
+                var validationResult = PersonValidator.ValidatePersonFields(name, phone, age);
+                if (!validationResult.IsValid)
                 {
-                    if (!IsNumeric(txtPhone.Text) || txtPhone.Text.Length != 10)
-                    {
-                        throw new Exception("Số điện thoại không hợp lệ!");
-                    }
+                    throw new Exception(validationResult.GetErrorMessage());
                 }
-
-                // Validate Age - không được là chữ
-                if (!string.IsNullOrWhiteSpace(txtAge.Text))
-                {
-                    if (!int.TryParse(txtAge.Text, out int age))
-                    {
-                        throw new Exception("Tuổi phải là số nguyên!");
-                    }
-                    if (age < 0 || age > 150)
-                    {
-                        throw new Exception("Tuổi phải từ 0 đến 150!");
-                    }
-                }
-
-                // Validate Amount - không được là chữ
-                // Removed Amount validation as it is now a ComboBox selection
 
                 if (editingMember != null)
                 {
                     // UPDATE
-                    editingMember.Name = txtName.Text.Trim();
-                    editingMember.Phone = txtPhone.Text.Trim();
+                    editingMember.Name = name;
+                    editingMember.Phone = phone;
                     editingMember.Gender = (cbGender.SelectedItem as ComboBoxItem)?.Content.ToString();
-                    editingMember.Age = int.TryParse(txtAge.Text, out int a) ? a : 0;
+                    editingMember.Age = age;
                     editingMember.Package = (cbPackage.SelectedItem as ComboBoxItem)?.Content.ToString();
                     editingMember.Timing = (cbTiming.SelectedItem as ComboBoxItem)?.Content.ToString();
 
-                    DataStore.Save();
+                    _memberService.Update(editingMember);
                     Logger.Write($"Cập nhật hội viên: {editingMember.Name}");
 
-                    MessageBox.Show("Cập nhật thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(
+                        AppConstants.Messages.SuccessUpdated,
+                        AppConstants.Messages.SuccessTitle,
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
                 }
                 else
                 {
                     // ADD NEW
                     var mem = new Member
                     {
-                        Id = DataStore.NextId(),
-                        Name = txtName.Text.Trim(),
-                        Phone = txtPhone.Text.Trim(),
+                        Name = name,
+                        Phone = phone,
                         Gender = (cbGender.SelectedItem as ComboBoxItem)?.Content.ToString(),
-                        Age = int.TryParse(txtAge.Text, out int a) ? a : 0,
+                        Age = age,
                         Package = (cbPackage.SelectedItem as ComboBoxItem)?.Content.ToString(),
                         Timing = (cbTiming.SelectedItem as ComboBoxItem)?.Content.ToString()
                     };
 
-                    DataStore.Members.Add(mem);
-                    DataStore.Save();
+                    _memberService.Add(mem);
                     Logger.Write($"Thêm mới: {mem.Name}");
 
-                    MessageBox.Show("Thêm thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(
+                        AppConstants.Messages.SuccessAdded,
+                        AppConstants.Messages.SuccessTitle,
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
                 }
 
                 ClearInput();
@@ -103,7 +103,12 @@ namespace GymWpfApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(
+                    ex.Message,
+                    AppConstants.Messages.ErrorTitle,
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
                 Logger.Write($"Lỗi xử lý hội viên: {ex.Message}");
             }
         }
@@ -112,18 +117,35 @@ namespace GymWpfApp
         {
             if (gridMembers.SelectedItem is Member selectedMember)
             {
-                var result = MessageBox.Show($"Bạn có chắc muốn xóa {selectedMember.Name}?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                var result = MessageBox.Show(
+                    $"Bạn có chắc muốn xóa {selectedMember.Name}?",
+                    AppConstants.Messages.ConfirmTitle,
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Warning
+                );
+
                 if (result == MessageBoxResult.Yes)
                 {
-                    DataStore.Members.Remove(selectedMember);
-                    DataStore.Save();
+                    _memberService.Remove(selectedMember);
                     Logger.Write($"Đã xóa: {selectedMember.Name}");
                     ClearInput();
+
+                    MessageBox.Show(
+                        AppConstants.Messages.SuccessDeleted,
+                        AppConstants.Messages.SuccessTitle,
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn dòng cần xóa!");
+                MessageBox.Show(
+                    AppConstants.Messages.InfoNoSelection,
+                    AppConstants.Messages.InfoTitle,
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information
+                );
             }
         }
 
@@ -132,12 +154,12 @@ namespace GymWpfApp
             string keyword = txtSearch.Text.ToLower();
             if (int.TryParse(keyword, out int id))
             {
-                var filtered = DataStore.Members.Where(m => m.Id == id).ToList();
+                var filtered = _memberService.GetAll().Where(m => m.Id == id).ToList();
                 gridMembers.ItemsSource = filtered;
             }
             else
             {
-                var filtered = DataStore.Members.Where(m => m.Name.ToLower().Contains(keyword)).ToList();
+                var filtered = _memberService.GetAll().Where(m => m.Name.ToLower().Contains(keyword)).ToList();
                 gridMembers.ItemsSource = filtered;
             }
         }
@@ -145,7 +167,7 @@ namespace GymWpfApp
         private void BtnRefresh_Click(object sender, RoutedEventArgs e)
         {
             txtSearch.Text = "";
-            gridMembers.ItemsSource = DataStore.Members;
+            gridMembers.ItemsSource = _memberService.GetAll();
         }
 
         private void BtnClear_Click(object sender, RoutedEventArgs e)
@@ -162,7 +184,7 @@ namespace GymWpfApp
                 txtName.Text = selected.Name;
                 txtPhone.Text = selected.Phone;
                 txtAge.Text = selected.Age.ToString();
-                
+
                 // Set ComboBox Package
                 foreach (ComboBoxItem item in cbPackage.Items)
                 {
@@ -211,14 +233,6 @@ namespace GymWpfApp
 
             lblFormTitle.Text = "THÊM MỚI";
             btnSave.Content = "THÊM MỚI";
-        }
-
-        private bool IsNumeric(string input)
-        {
-            if (string.IsNullOrWhiteSpace(input))
-                return false;
-
-            return input.All(char.IsDigit);
         }
     }
 }
