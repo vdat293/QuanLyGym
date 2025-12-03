@@ -1,3 +1,8 @@
+using GymWpfApp.Constants;
+using GymWpfApp.Infrastructure;
+using GymWpfApp.Interfaces;
+using GymWpfApp.Models;
+using GymWpfApp.Validators;
 using System;
 using System.Linq;
 using System.Windows;
@@ -8,13 +13,15 @@ namespace GymWpfApp
     public partial class StaffWindow : Window
     {
         private Staff editingStaff = null;
+        private readonly IDataService<Staff> _staffService;
 
         public StaffWindow()
         {
             InitializeComponent();
 
-            StaffDataStore.Load();
-            gridStaff.ItemsSource = StaffDataStore.StaffList;
+            // Dependency Injection - Resolve service from container
+            _staffService = ServiceContainer.Instance.Resolve<IDataService<Staff>>();
+            gridStaff.ItemsSource = _staffService.GetAll();
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
@@ -26,70 +33,66 @@ namespace GymWpfApp
         {
             try
             {
+                // Validate required fields
                 if (string.IsNullOrWhiteSpace(txtName.Text) || cbGender.SelectedItem == null)
                 {
-                    throw new Exception("Vui lòng nhập tên và chọn giới tính!");
+                    throw new Exception(AppConstants.Messages.ErrorMissingInfo);
                 }
 
-                if (txtName.Text.Any(char.IsDigit))
-                {
-                    throw new Exception("Tên không được chứa số!");
-                }
+                // Get values
+                string name = txtName.Text.Trim();
+                string phone = txtPhone.Text.Trim();
+                int age = int.TryParse(txtAge.Text, out int a) ? a : 0;
 
-                if (!string.IsNullOrWhiteSpace(txtPhone.Text))
+                // Validate using PersonValidator
+                var validationResult = PersonValidator.ValidatePersonFields(name, phone, age);
+                if (!validationResult.IsValid)
                 {
-                    if (!IsNumeric(txtPhone.Text) || txtPhone.Text.Length != 10)
-                    {
-                        throw new Exception("Số điện thoại không hợp lệ!");
-                    }
-                }
-
-                if (!string.IsNullOrWhiteSpace(txtAge.Text))
-                {
-                    if (!int.TryParse(txtAge.Text, out int age))
-                    {
-                        throw new Exception("Tuổi phải là số nguyên!");
-                    }
-                    if (age < 18 || age > 70)
-                    {
-                        throw new Exception("Tuổi nhân viên phải từ 18 đến 70!");
-                    }
+                    throw new Exception(validationResult.GetErrorMessage());
                 }
 
                 if (editingStaff != null)
                 {
                     // UPDATE
-                    editingStaff.Name = txtName.Text.Trim();
-                    editingStaff.Phone = txtPhone.Text.Trim();
+                    editingStaff.Name = name;
+                    editingStaff.Phone = phone;
                     editingStaff.Gender = (cbGender.SelectedItem as ComboBoxItem)?.Content.ToString();
-                    editingStaff.Age = int.TryParse(txtAge.Text, out int a) ? a : 0;
+                    editingStaff.Age = age;
                     editingStaff.Position = (cbPosition.SelectedItem as ComboBoxItem)?.Content.ToString();
                     editingStaff.Shift = (cbShift.SelectedItem as ComboBoxItem)?.Content.ToString();
 
-                    StaffDataStore.Save();
+                    _staffService.Update(editingStaff);
                     Logger.Write($"Cập nhật nhân viên: {editingStaff.Name}");
 
-                    MessageBox.Show("Cập nhật thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(
+                        AppConstants.Messages.SuccessUpdated,
+                        AppConstants.Messages.SuccessTitle,
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
                 }
                 else
                 {
                     // ADD NEW
                     var staff = new Staff
                     {
-                        Id = StaffDataStore.NextId(),
-                        Name = txtName.Text.Trim(),
-                        Phone = txtPhone.Text.Trim(),
+                        Name = name,
+                        Phone = phone,
                         Gender = (cbGender.SelectedItem as ComboBoxItem)?.Content.ToString(),
-                        Age = int.TryParse(txtAge.Text, out int a) ? a : 0,
+                        Age = age,
                         Position = (cbPosition.SelectedItem as ComboBoxItem)?.Content.ToString(),
                         Shift = (cbShift.SelectedItem as ComboBoxItem)?.Content.ToString()
                     };
 
-                    StaffDataStore.StaffList.Add(staff);
-                    StaffDataStore.Save();
+                    _staffService.Add(staff);
                     Logger.Write($"Thêm nhân viên: {staff.Name}");
 
-                    MessageBox.Show("Thêm nhân viên thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(
+                        AppConstants.Messages.SuccessAdded,
+                        AppConstants.Messages.SuccessTitle,
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
                 }
 
                 ClearInput();
@@ -97,7 +100,12 @@ namespace GymWpfApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(
+                    ex.Message,
+                    AppConstants.Messages.ErrorTitle,
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
                 Logger.Write($"Lỗi xử lý nhân viên: {ex.Message}");
             }
         }
@@ -106,18 +114,35 @@ namespace GymWpfApp
         {
             if (gridStaff.SelectedItem is Staff selectedStaff)
             {
-                var result = MessageBox.Show($"Bạn có chắc muốn xóa nhân viên {selectedStaff.Name}?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                var result = MessageBox.Show(
+                    $"Bạn có chắc muốn xóa {selectedStaff.Name}?",
+                    AppConstants.Messages.ConfirmTitle,
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Warning
+                );
+
                 if (result == MessageBoxResult.Yes)
                 {
-                    StaffDataStore.StaffList.Remove(selectedStaff);
-                    StaffDataStore.Save();
+                    _staffService.Remove(selectedStaff);
                     Logger.Write($"Đã xóa nhân viên: {selectedStaff.Name}");
                     ClearInput();
+
+                    MessageBox.Show(
+                        AppConstants.Messages.SuccessDeleted,
+                        AppConstants.Messages.SuccessTitle,
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn dòng cần xóa!");
+                MessageBox.Show(
+                    AppConstants.Messages.InfoNoSelection,
+                    AppConstants.Messages.InfoTitle,
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information
+                );
             }
         }
 
@@ -126,12 +151,12 @@ namespace GymWpfApp
             string keyword = txtSearch.Text.ToLower();
             if (int.TryParse(keyword, out int id))
             {
-                var filtered = StaffDataStore.StaffList.Where(s => s.Id == id).ToList();
+                var filtered = _staffService.GetAll().Where(s => s.Id == id).ToList();
                 gridStaff.ItemsSource = filtered;
             }
             else
             {
-                var filtered = StaffDataStore.StaffList.Where(s => s.Name.ToLower().Contains(keyword)).ToList();
+                var filtered = _staffService.GetAll().Where(s => s.Name.ToLower().Contains(keyword)).ToList();
                 gridStaff.ItemsSource = filtered;
             }
         }
@@ -139,7 +164,7 @@ namespace GymWpfApp
         private void BtnRefresh_Click(object sender, RoutedEventArgs e)
         {
             txtSearch.Text = "";
-            gridStaff.ItemsSource = StaffDataStore.StaffList;
+            gridStaff.ItemsSource = _staffService.GetAll();
         }
 
         private void BtnClear_Click(object sender, RoutedEventArgs e)
@@ -157,6 +182,7 @@ namespace GymWpfApp
                 txtPhone.Text = selected.Phone;
                 txtAge.Text = selected.Age.ToString();
 
+                // Set ComboBox Gender
                 foreach (ComboBoxItem item in cbGender.Items)
                 {
                     if (item.Content.ToString() == selected.Gender)
@@ -166,6 +192,7 @@ namespace GymWpfApp
                     }
                 }
 
+                // Set ComboBox Position
                 foreach (ComboBoxItem item in cbPosition.Items)
                 {
                     if (item.Content.ToString() == selected.Position)
@@ -175,6 +202,7 @@ namespace GymWpfApp
                     }
                 }
 
+                // Set ComboBox Shift
                 foreach (ComboBoxItem item in cbShift.Items)
                 {
                     if (item.Content.ToString() == selected.Shift)
@@ -202,14 +230,6 @@ namespace GymWpfApp
 
             lblFormTitle.Text = "THÊM MỚI";
             btnSave.Content = "THÊM MỚI";
-        }
-
-        private bool IsNumeric(string input)
-        {
-            if (string.IsNullOrWhiteSpace(input))
-                return false;
-
-            return input.All(char.IsDigit);
         }
     }
 }

@@ -1,17 +1,21 @@
+using GymWpfApp.Infrastructure;
+using GymWpfApp.Interfaces;
 using GymWpfApp.Models;
-using GymWpfApp.Services;
-using GymWpfApp.Utils;
 using System.Collections.ObjectModel;
 
 namespace GymWpfApp
 {
     /// <summary>
-    /// File tương thích ngược để giữ namespace cũ hoạt động
-    /// Sử dụng alias để trỏ đến các service mới
+    /// Backward compatibility layer
+    /// Provides static interface to instance-based services via ServiceContainer
+    /// Allows existing code to work without modification
     /// </summary>
     public static class DataStore
     {
-        public static ObservableCollection<Member> Members => MemberService.Members;
+        private static IDataService<Member> MemberService =>
+            ServiceContainer.Instance.Resolve<IDataService<Member>>();
+
+        public static ObservableCollection<Member> Members => MemberService.GetAll();
 
         public static void Load() => MemberService.Load();
 
@@ -22,7 +26,10 @@ namespace GymWpfApp
 
     public static class StaffDataStore
     {
-        public static ObservableCollection<Staff> StaffList => StaffService.StaffList;
+        private static IDataService<Staff> StaffService =>
+            ServiceContainer.Instance.Resolve<IDataService<Staff>>();
+
+        public static ObservableCollection<Staff> StaffList => StaffService.GetAll();
 
         public static void Load() => StaffService.Load();
 
@@ -33,7 +40,10 @@ namespace GymWpfApp
 
     public static class EquipmentDataStore
     {
-        public static ObservableCollection<Equipment> EquipmentList => EquipmentService.EquipmentList;
+        private static IDataService<Equipment> EquipmentService =>
+            ServiceContainer.Instance.Resolve<IDataService<Equipment>>();
+
+        public static ObservableCollection<Equipment> EquipmentList => EquipmentService.GetAll();
 
         public static void Load() => EquipmentService.Load();
 

@@ -1,3 +1,4 @@
+using GymWpfApp.Constants;
 using System;
 using System.Windows;
 
@@ -21,7 +22,12 @@ namespace GymWpfApp
 
         private void BtnForgotPassword_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            MessageBox.Show("Liên hệ email 24050129@student.bdu.edu.vn để lấy lại mật khẩu", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show(
+                AppConstants.Messages.InfoForgotPassword,
+                AppConstants.Messages.InfoTitle,
+                MessageBoxButton.OK,
+                MessageBoxImage.Information
+            );
         }
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
@@ -34,11 +40,11 @@ namespace GymWpfApp
                 // Validate input
                 if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
                 {
-                    throw new Exception("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu!");
+                    throw new Exception(AppConstants.Messages.ErrorMissingInfo);
                 }
 
-                // Check credentials
-                if (username == "admin" && password == "123456")
+                // Check credentials using constants
+                if (username == AppConstants.Auth.DefaultUsername && password == AppConstants.Auth.DefaultPassword)
                 {
                     Logger.Write($"Đăng nhập thành công: {username}");
 
@@ -51,12 +57,17 @@ namespace GymWpfApp
                 }
                 else
                 {
-                    throw new Exception("Tên đăng nhập hoặc mật khẩu không đúng!");
+                    throw new Exception(AppConstants.Messages.ErrorLoginFailed);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi đăng nhập", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(
+                    ex.Message,
+                    AppConstants.Messages.ErrorTitle,
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
                 Logger.Write($"Đăng nhập thất bại: {ex.Message}");
                 txtPassword.Clear();
                 txtPassword.Focus();
